@@ -1,0 +1,17 @@
+html {
+background-color: #707070;
+}
+
+.logo {
+
+}
+
+h1 {
+  font-family: 'Sacramento', cursive;
+  color: #fff;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: center;
+}
