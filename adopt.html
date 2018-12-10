@@ -33,39 +33,91 @@
   </div>
   </div>
   </header>
-
   <main>
-    <p>Cat ID number</p>
-    <p>Your full name</p>
-    <p>Your age</p>
-    <p>Your occupation</p>
-    <p>Your address</p>
-      <p>Street address</p>
-      <p>City</p>
-      <p>Province</p>
-      <p>Postal code</p>
-    <p>Phone number</p>
-    <p>Email address</p>
-    <p>Why do you want to adopt?</p>
-    <p>What type of home do you live in?</p>
-      <p>House</p>
-      <p>Condo</p>
-      <p>Apartment</p>
-      <p>Other</p>
-    <p>Do you rent or own?</p>
-    <p>Does anyone in your house have an allergy to animals?</p>
+    <form class="gutter wrapper max-length" method="POST">
+      <fieldset>
+        <legend>Application Form</legend>
+        <div class="push-2">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" required>
+
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" required>
+
+          <label for="age">Age</label>
+          <input type="text" id="age" name="age" required>
+
+          <label for="occupation">Occupation</label>
+          <input type="text" id="occupation" name="occupation" required>
+
+          <label for="phone-number">Phone Number</label>
+          <input type="tel" id="phone-number" name="phone-number" required>
+
+          <label for="email-address">Email Address</label>
+          <input type="email" id="email-address" name="email-address" required>
+        </div>
+
+        <div class="push-2">
+          <label for="street-address">Street Address</label>
+          <input type="text" id="street-address" name="street-address" required>
+
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" required>
+
+          <label for="province">Province</label>
+          <input type="text" id="province" name="province" required>
+
+          <label for="postal-code">Postal Code</label>
+          <input type="text" id="postal-code" name="postal-code" required>
+        </div>
+
+        <div class="push-2">
+          <label for="subject">What Type of Home Do You Live In?</label>
+          <select id="subject" name="_subject">
+            <option>Select an option</option>
+            <option>House</option>
+            <option>Condo</option>
+            <option>Townhouse</option>
+            <option>Apartment</option>
+            <option>Other</option>
+          </select>
+          <label for="subject">Do You Rent or Own?</label>
+          <select id="subject" name="_subject">
+            <option>Select an option</option>
+            <option>Rent</option>
+            <option>Own</option>
+          </select>
+        </div>
+
+        <div class="push-2">
+          <label for="cat-id-number">Cat ID Number</label>
+          <input type="text" id="cat-id-number" name="cat-id-number" required>
+
+          <label for="adoption-reason">Why do you want to Adopt?</label>
+          <textarea name="adoption-reason" rows="8" cols="80" id="adoption-reason"></textarea>
+          <div class="pad-t">
+            <legend>Does anyone in your house have an allergy to animals?</legend>
+            <input type="radio" id="yes" name="allergies">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="allergies">
+            <label for="no">No</label>
+          </div>
+        </div>
+        <button type="button" name="button">Submit Form</button>
+      </fieldset>
+    </form>
   </main>
 </body>
 
 <footer>
   <div class="social">
-    <i class="icon i-96">
+    <i class="icon i-32">
       <img class="social" src="images/facebook.png" alt="facebook-logo">
     </i>
-    <i class="icon i-96">
+    <i class="icon i-32">
       <img class="social" src="images/instagram.png" alt="instagram-logo">
     </i>
-    <i class="icon i-96">
+    <i class="icon i-32">
       <img class="social" src="images/twitter.svg" alt="twitter-logo">
     </i>
   </div>
