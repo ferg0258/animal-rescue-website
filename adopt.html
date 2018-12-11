@@ -29,7 +29,7 @@
     </div>
   </div>
   <div class="unit xs-1 s-1 m-2-3 l-2-3">
-    <nav role="navigation">
+    <nav role="navigation" id="nav" tabindex="0">
       <ul class="list-group-inline text-center">
         <li><a class="btn btn-ghost" href="index.html">Home</a></li>
         <li><a class="btn btn-ghost" href="rescues.html">Rescues</a></li>
@@ -39,10 +39,10 @@
   </div>
   </div>
   </header>
-  <<main role="main" id="main" tabindex="0">
+  <main role="main" id="main" tabindex="0">
     <form class="gutter wrapper max-length" method="POST">
       <fieldset>
-        <legend><h1 class="not-bold mega text-upper">Application Form</h1></legend>
+        <h1 class="not-bold mega text-upper">Application Form</h1>
         <div class="push-2">
           <label for="first-name">First Name</label>
           <input type="text" id="first-name" name="first-name" required>
@@ -113,7 +113,7 @@
       </fieldset>
     </form>
   </main>
-  <footer class="gutter wrapper island max-length">
+  <footer role="contentinfo" class="gutter wrapper island max-length">
     <div class="social">
       <i class="icon i-32">
         <img class="social" src="images/facebook.png" alt="facebook-logo">
