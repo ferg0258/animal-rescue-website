@@ -42,7 +42,13 @@
     </div>
   </header>
   <main role="main" id="main" tabindex="0">
+    <div class="embed embed-16by9">
+      <img class="embed-item" src="images/yarn-banner.jpg" alt="#">
+    </div>
     <h1 class="max-length gutter not-bold mega text-upper">Application Form</h1>
+      <article>
+        <p>Come add another member to your family!</p>
+      </article>
     <form class="gutter max-length" method="POST" action="ferg0258@algonquinlive.com">
       <fieldset>
         <legend>Fill out the form</legend>
@@ -103,14 +109,16 @@
 
         <label for="adoption-reason">Why do you want to Adopt?</label>
         <textarea name="adoption-reason" rows="8" cols="80" id="adoption-reason"></textarea>
+        <fieldset>
+          <legend class="pad-t">Does anyone in your house have an allergy to animals?</legend>
+          <input type="radio" id="yes" name="allergies">
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="allergies">
+          <label for="no">No</label>
+        </fieldset>
 
-        <legend for="allergies" class="pad-t">Does anyone in your house have an allergy to animals?</legend>
-        <input type="radio" id="yes" name="allergies">
-        <label for="yes">Yes</label>
-        <input type="radio" id="no" name="allergies">
-        <label for="no">No</label>
 
-        <button class="btn btn-ghost">Submit Form</button>
+        <button type="submit" class="btn btn-ghost">Submit Form</button>
       </fieldset>
     </form>
   </main>
