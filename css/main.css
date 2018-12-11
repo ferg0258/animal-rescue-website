@@ -1,15 +1,11 @@
 html {
-background-color: #707070;
+  background-color: #707070;
   color: #fff;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.logo {
-
+  font-family: 'Open Sans', sans-serif;
 }
 
 .pacifico {
-    font-family: 'Pacifico', cursive;
+  font-family: Pacifico, cursive;
 }
 
 .open-sans {
@@ -25,6 +21,10 @@ textarea {
 nav ul li {
   display: inline-block;
   text-align: center;
+}
+
+a {
+  #fff;
 }
 
 .homepage p {
